@@ -1,6 +1,7 @@
 // By Manish Kumar (IEC2019068), IIIT Allahabad
 // Hard
 // https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/
+// https://www.youtube.com/watch?v=MT8zeLak_bI
 // Try to understand Case 3rd, and implement it
 
 
