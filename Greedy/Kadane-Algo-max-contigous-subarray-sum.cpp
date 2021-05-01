@@ -1,3 +1,6 @@
+// By Manish Kumar (IEC2019068), IIIT Allahabad
+// Hard
+
 //https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1#
 
 int maxSubarraySum(int arr[], int n){

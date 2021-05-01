@@ -1,3 +1,6 @@
+// By Manish Kumar (IEC2019068), IIIT Allahabad
+// Hard
+
 #include<bits/stdc++.h>
 using namespace std;
 

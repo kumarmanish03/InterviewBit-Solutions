@@ -1,3 +1,5 @@
+// By Manish Kumar (IEC2019068), IIIT Allahabad
+// Hard
 //https://practice.geeksforgeeks.org/problems/finding-the-numbers0215/1#
 //https://youtu.be/u5-ss5kKy7g
 
