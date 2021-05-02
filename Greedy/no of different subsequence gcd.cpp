@@ -2,7 +2,7 @@
 // Medium
 // https://leetcode.com/problems/number-of-different-subsequences-gcds/
 // https://www.youtube.com/watch?v=ZYJDCcKnwag
-// We iterate all values in rance and check for every number if it a gcd of possible subsequence
+// We iterate all values in range and check for every number if it a gcd of possible subsequence
 // For having gcd, 1. no. should be present or 2. the gcd of its multipliers (which is present in given array) is no. itself, then it is possible gcd of subsequence 
 
 class Solution {
