@@ -1,5 +1,5 @@
 // By Manish Kumar (IEC2019068), IIIT Allahabad
-// Medium But trick due to corner cases
+// Medium But tricky due to corner cases
 // Observe all corner cases carefully
 // Observe how to ckeck overflow of an integer(line 37)
 // https://www.interviewbit.com/problems/atoi/
