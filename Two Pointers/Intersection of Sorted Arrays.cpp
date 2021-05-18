@@ -1,8 +1,11 @@
 // Manish Kumar, IIIT Allahabad
 // Easy, But notice the concept of two pointers
+// Time Complexity : O(m + n)
+// Space Complexity : O(1)
 // https://www.interviewbit.com/problems/intersection-of-sorted-arrays/
 
 // Read last paragraph of Solution Approach(InterviewBit)
+// Time Complexity = O(m + n)
 
 vector<int> Solution::intersect(const vector<int> &A, const vector<int> &B) {
     vector<int> v;
