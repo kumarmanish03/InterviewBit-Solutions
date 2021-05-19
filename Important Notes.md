@@ -10,7 +10,8 @@
   > Follow this in all Two Pointers Questions
   > (Refer Question Diff - Two Pointers)
 
-- to_string(int x) // Converts integer to string and return that
+- Converts integer to string and return that
+  `to_string(int x);`
 
 - Split words from strings using stringstream function
 
@@ -23,3 +24,6 @@
   }
 
   ```
+
+- Time Complexity :
+  2^n > n^3 > n^2 > n > sqrt(n) > log(n)
