@@ -12,4 +12,12 @@
 - to_string(int x) // Converts integer no. to string
 
 - Split words from strings using stringstream function
-  `istringstream ss(str); string word; while (ss >> word) { cout << word << "\n"; }`
+
+  ```
+  istringstream ss(str);
+  string word;
+  while (ss >> word) {
+    cout << word << "\n";
+  }
+
+  ```
