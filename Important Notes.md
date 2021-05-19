@@ -11,4 +11,5 @@
 
 - to_string(int x) // Converts integer no. to string
 
-- https://www.interviewbit.com/problems/trailing-zeros-in-factorial/
+- Split words from strings using stringstream function
+  `istringstream ss(str); string word; while (ss >> word) { cout << word << "\n"; }`
