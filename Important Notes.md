@@ -1,4 +1,5 @@
 - transform(Iterator inputBegin, Iterator inputEnd, Iterator OutputBegin, unary_operation)
+  > used to convert letters to upeercase or lowercase, add something to all elements of array, or some operation which should operate on all values of array
 - Two Pointers
 
   > Try to select pointers where moving them handles both cases
@@ -9,11 +10,12 @@
   > Follow this in all Two Pointers Questions
   > (Refer Question Diff - Two Pointers)
 
-- to_string(int x) // Converts integer no. to string
+- to_string(int x) // Converts integer to string and return that
 
 - Split words from strings using stringstream function
 
   ```
+  string str = "Geeks for Geeks";
   istringstream ss(str);
   string word;
   while (ss >> word) {
