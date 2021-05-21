@@ -5,10 +5,10 @@
 
 https://www.interviewbit.com/problems/majority-element/
 
-// A simple soln is using unordered_map but this ques could be solved without using it SP : O(1)
+// A simple soln is using unordered_map but this ques could be solved without using it i.e, in SP : O(1)
 // Greedy Approach : 
 // The greedy approach is since no. is always present more than half in the array
-// then it is surely that atleast one pair is present adjacent OR at ends of the array
+// then it is surely that atleast one pair of given no. is present adjacent OR given no. may present at both ends of the array
 
 // Soln using unordered_map, Space Complexty : O(n);
 
