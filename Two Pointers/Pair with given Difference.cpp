@@ -7,6 +7,7 @@ https://www.interviewbit.com/problems/pair-with-given-difference/
 
 // While loop in solution is standard loop used in these type of questions
 // This loop checks all pairs, and also checks two pairs alternatively i.e, a - b and b - a also
+// Hence it also checks if B negative 
 // That's why while loop condition is : j < N && i < N beco'z it may possible i > j
 
 int Solution::solve(vector<int> &A, int B) {
