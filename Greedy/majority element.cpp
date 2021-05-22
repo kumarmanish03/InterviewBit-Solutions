@@ -27,8 +27,8 @@ int Solution::majorityElement(const vector<int> &A) {
     }
 }
 
+// Optimised Soln
 // Soln using simple traversing, Space Complexity : O(1)
-
 int Solution::majorityElement(const vector<int> &A) {
     int elem=0, count=1;
     for(int i=1; i<A.size(); ++i)
