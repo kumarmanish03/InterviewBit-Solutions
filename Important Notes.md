@@ -38,3 +38,20 @@
 - In Binary Search questions, try to make predicate function, else work is simple
 
 - Be carefull of constraints, in case of overflow use 'long long'
+
+- In some questions which seems to hard , there may be pattern in it,
+
+- Careful while using if-else put ==(double) while comparing not =(single)
+
+- Careful of using Global Variables, because in competitive questions there are different test cases and if we save something in global variables(ex. vectors, arrays, strings) do clear or erase it, otherwise it may use earlier data of test cases;
+
+- ```
+    1 << n = 1 * 2^n (Left Shift Multiply)
+  16 << n = 16 * 2^n
+  n >> 1 = n/2*1 (Right Shift)
+  n >> 4 = n/2^4
+  ```
+
+```
+
+```
