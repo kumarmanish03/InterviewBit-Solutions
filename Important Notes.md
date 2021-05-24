@@ -52,6 +52,8 @@
   n >> 4 = n/2^4
   ```
 
-```
+- An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated
 
-```
+###### https://www.geeksforgeeks.org/c-classes-and-objects/
+
+Read this article for more about Classes
