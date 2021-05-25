@@ -65,4 +65,14 @@ Read this article for more about Classes
   \*(p + 0) = p[0] thats'why array starts from 0 index because if it start from one then memory of first block(where \*p is pointing) get wasted
 
 - ##### https://www.geeksforgeeks.org/g-fact-30/
+
   delete vs free, 'delete' used for deallocating pointers pointing to memory allocated using 'new' operator
+
+- This is Defination of a Linked List, here if you initialized node as `ListNode *temp = new ListNode(5)`, then temp->val = 5 & temp->next = NULL becoz of `ListNode(int x) : val(x), next(NULL) {}`
+
+```struct ListNode {
+      int val;
+      ListNode *next;
+      ListNode(int x) : val(x), next(NULL) {}
+  };
+```
