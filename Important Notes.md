@@ -54,6 +54,15 @@
 
 - An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated
 
-###### https://www.geeksforgeeks.org/c-classes-and-objects/
+##### https://www.geeksforgeeks.org/c-classes-and-objects/
 
 Read this article for more about Classes
+
+- ##### https://www.geeksforgeeks.org/linked-list-vs-array/
+
+- ##### https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
+
+  \*(p + 0) = p[0] thats'why array starts from 0 index because if it start from one then memory of first block(where \*p is pointing) get wasted
+
+- ##### https://www.geeksforgeeks.org/g-fact-30/
+  delete vs free, 'delete' used for deallocating pointers pointing to memory allocated using 'new' operator
