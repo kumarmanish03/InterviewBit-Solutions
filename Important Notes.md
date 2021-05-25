@@ -70,7 +70,8 @@ Read this article for more about Classes
 
 - This is Defination of a Linked List, here if you initialized node as `ListNode *temp = new ListNode(5)`, then temp->val = 5 & temp->next = NULL becoz of `ListNode(int x) : val(x), next(NULL) {}`
 
-```struct ListNode {
+```
+  struct ListNode {
       int val;
       ListNode *next;
       ListNode(int x) : val(x), next(NULL) {}
