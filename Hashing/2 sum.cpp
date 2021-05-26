@@ -4,6 +4,8 @@
 https://www.interviewbit.com/problems/2-sum/
 
 // Also done without using extra vector, see complete soln interviewbit
+// But notice the comp function which have been used, it is such that 
+// for it minimum pair is if i.second is minimum and i.first is maximum
 
 bool comp(pair<int, int> p1, pair<int, int> p2){
     if(p1.second < p2.second)
