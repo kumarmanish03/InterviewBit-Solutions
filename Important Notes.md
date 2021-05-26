@@ -77,3 +77,8 @@ Read this article for more about Classes
       ListNode(int x) : val(x), next(NULL) {}
   };
 ```
+
+- `sort(a.begin(), a.end(), comp);`
+  The given 'comp' function is a boolean function which asks 'should I swap' i.e, If 'comp' return true that means swap(a, b) [Now b comes before a], and if returns false then ignore;
+  `min_element(), max_element()` function also accepts 'comp' function
+  https://www.youtube.com/watch?v=3pvZhwp0U9w&t=304s
