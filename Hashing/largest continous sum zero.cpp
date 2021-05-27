@@ -1,3 +1,8 @@
+// Manish Kumar, IIIT Allahabad
+// Medium
+
+https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/
+
 
 // Returns pair with maximum difference and lowest first index
 bool comp(pair<int, int> p1, pair<int, int> p2){
