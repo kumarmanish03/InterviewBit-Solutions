@@ -1,5 +1,4 @@
 // Manish Kumar, IIIT ALlahabad
-
 // Subset generation using Bit Manupulation
 // Subset generation using Recursion
 
@@ -45,11 +44,11 @@ void solve(int i, int n){
 }
 
 int main(){
- OJ;
- int n;
- cin >> n;
+  OJ;
+	int n;
+  cin >> n;
 
- solve(0, n);
- getSubsets(n);
+	solve(0, n);
+	getSubsets(n);
 
 }
