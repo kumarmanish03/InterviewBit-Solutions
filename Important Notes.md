@@ -84,3 +84,12 @@ Read this article for more about Classes
   https://www.youtube.com/watch?v=3pvZhwp0U9w&t=304s
 
   - For min_element, comparator function return last index.For max-element, comparator function return first index. Hence design comp likewise
+
+  - Dynamically allocation of 2D array of size arr[n][m]
+
+  ```int** arr = new int*[n];
+  for(int i = 0; i < n; i++)
+  	arr[i] = new int[m];
+  ```
+
+Ex. for passing it as a parameter `solve(int** arr){}`
