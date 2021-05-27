@@ -5,6 +5,8 @@
 // Method 2 (generate all permutation of vector v having distinct elements)
 // Method 3 (generate all permutations of vector v having similar elements also)
 
+// STL function : next_permutations(v.begin(), v.end()); using do while loop
+
 #include<bits/stdc++.h>
 using namespace std;
 
