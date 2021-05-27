@@ -45,11 +45,11 @@ void solve(int i, int n){
 }
 
 int main(){
-  OJ;
-	int n;
-  cin >> n;
+ OJ;
+ int n;
+ cin >> n;
 
-	solve(0, n);
-	getSubsets(n);
+ solve(0, n);
+ getSubsets(n);
 
 }
