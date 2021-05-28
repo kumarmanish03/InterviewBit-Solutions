@@ -17,3 +17,6 @@
 - https://www.interviewbit.com/problems/trailing-zeros-in-factorial/
 
 - https://www.interviewbit.com/problems/reccmpl3/
+
+- https://www.interviewbit.com/problems/profit-maximisation/
+  (Solved using priority_queue)
