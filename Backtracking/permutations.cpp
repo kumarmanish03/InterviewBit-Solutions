@@ -80,12 +80,12 @@ int main(){
 	int n;
 	cin >> n;
 
-	vector<bool> chosen(n);
-	solve(n, chosen);
+	// vector<bool> chosen(n);
+	// solve(n, chosen);
 
 	vector<int> v{1,2,3};
 	permute(0, v);
 
-	vector<int> v1{1,2,3,3};
-	permuteDistinct(0, v1);
+	// vector<int> v1{1,2,3,3};
+	// permuteDistinct(0, v1);
 }
