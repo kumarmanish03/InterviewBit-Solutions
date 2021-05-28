@@ -93,3 +93,13 @@ Read this article for more about Classes
   ```
 
 Ex. for passing it as a parameter `solve(int** arr){}`
+
+- 12! is storable in int
+
+- By default, priority queue are sorted in decreasing
+  order, and it is possible to find and remove the largest element in the queue from top
+  If we want to create a priority queue that supports finding and removing the
+  smallest element, we can do it as follows:
+  `priority_queue<int,vector<int>,greater<int>> q;`
+
+In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
