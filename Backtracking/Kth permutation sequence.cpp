@@ -3,6 +3,22 @@
 
 https://leetcode.com/problems/permutation-sequence/
 
+// Strategy:
+// In all permutations of n no., (n-1)! no. starting with 1 and 2 and 3 . . n (thats'why total permutations is n*(n-1)! = n!)
+// And in each starting with 1 there are (n-1-1)! no. in that
+// Ex. for n = 3, permutaions are;
+// 1 2 3
+// 1 3 2
+// 2 1 3
+// 2 3 1
+// 3 1 2
+// 3 2 1
+// in this, (3-1)! = 2, two no. starting from 1 then (3-1-1)! = 1
+// what we do, we regularly subtract fact(n-1) from k and add first digit(set) of to answer until n == 0
+// then we include rest digit to answer
+// Boom!, we are able to reach at kth permutation. Enjoy ;) 
+
+
 
 class Solution {
 public:
