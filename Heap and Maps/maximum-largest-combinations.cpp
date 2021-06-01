@@ -25,14 +25,14 @@ vector<int> Solution::solve(vector<int> &A, vector<int> &B, int C) {
         int j = p.second.second;
         
         // Add A[i-1] + A[j] 
-        int sum = A[i-1] + A[j];
+        int sum = A[i-1] + B[j];
         if(s.find({i-1, j}) == s.end()){
             maxHeap.push({sum, {i-1, j}});
             s.insert({i-1, j});
         }
         
         // Add A[i] + A[j-1]
-        sum = A[i] + A[j-1];
+        sum = A[i] + B[j-1];
         if(s.find({i, j-1}) == s.end()){
             maxHeap.push({sum, {i, j-1}});
             s.insert({i, j-1});
