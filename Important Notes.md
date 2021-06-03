@@ -103,3 +103,9 @@ Ex. for passing it as a parameter `solve(int** arr){}`
   `priority_queue<int,vector<int>,greater<int>> q;`
 
 In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
+
+- int const* is pointer to const int
+  int *const is const pointer to int
+  int const\* const is const pointer to const int
+
+- In function try to pass argument(int, vector, etc) by reference. Becoz by reference it does not make copy and hence less momory, time
