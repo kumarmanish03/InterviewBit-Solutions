@@ -1,11 +1,14 @@
 // Manish Kumar, IIIT Allahabad
-// Medium
+// Medium, Must try
 
 https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/
 
 // Catch:
 // Be carefull of passing vector by reference as it cause less memory usage
 // If not passing by reference, it makes another copy of itself and hence use large memory
+
+// Strategy:
+// This question is similar to Binary Search(recursion)
 
 TreeNode* makeTree(int start, int end, const vector<int> &A){
     if(start > end)
