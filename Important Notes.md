@@ -109,3 +109,10 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
   int const\* const is const pointer to const int
 
 - In function try to pass argument(int, vector, etc) by reference. Becoz by reference it does not make copy and hence less momory, time
+- Comparator function using lambda function
+
+```
+  sort(ans.begin(), ans.end(), [&](auto&x, auto&y){
+              return x > y
+          });
+```
