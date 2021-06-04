@@ -1,34 +1,28 @@
 // Manish Kumar, IIIT Allahabad
-// Medium
+// Easy
 
-https://www.interviewbit.com/problems/path-to-given-node/
+https://www.interviewbit.com/problems/remove-half-nodes/
 
-// Try to rewrite first the soln again
+// First try yourself
 
-bool path(TreeNode *A, vector<int> &v, int B){
-    if(!A){
-        return false;
-    }
+TreeNode* removeHalf(TreeNode *A){
+    if(!A)
+        return A;
 
-    if(A->val == B){
-        v.push_back(A->val);
-        return true;
-    }
+    A->left = removeHalf(A->left);
+    A->right = removeHalf(A->right);
     
-    bool ans1 = path(A->left, v, B);
-    bool ans2 = path(A->right, v, B);
-    
-    if(ans1 || ans2){
-        v.push_back(A->val);
-        return true;
+    if(A->left && !A->right){
+        return A->left;
+    }
+    if(!A->left && A->right){
+        return A->right;
     }
     
-    return false;
+    return A;
 }
 
-vector<int> Solution::solve(TreeNode* A, int B) {
-    vector<int> v;
-    path(A, v, B);
-    reverse(v.begin(), v.end());
-    return v;
+TreeNode* Solution::solve(TreeNode* A) {
+    TreeNode *temp = removeHalf(A);
+    return temp;
 }
