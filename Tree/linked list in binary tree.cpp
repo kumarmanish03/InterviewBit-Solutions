@@ -1,6 +1,11 @@
 https://leetcode.com/contest/weekly-contest-178/problems/linked-list-in-binary-tree/
 
-// 
+// Efficient soln below
+
+// Solution 1 (But uses extra memory)
+// Strategy :
+// v vector of vectors store all possible nodes from root to leaf
+// Then, check for any possible subarray from any of the vectors of v 
 
 class Solution {
 public:
@@ -58,5 +63,37 @@ public:
                 return true;
         }
         return false;
+    }
+};
+
+
+// Efficient solution (2 Dfs)
+// dfs() go through all nodes and start dfs2() from each
+// dfs2() checks if, from that node linked list elements are matching
+
+class Solution {
+public:
+    bool dfs2(TreeNode* root, ListNode* head){
+        if(!head)
+            return 1;
+        if(!root || root->val != head->val)
+            return 0;
+        return dfs2(root->left, head->next) || dfs2(root->right, head->next);
+    }
+    
+    bool dfs(TreeNode* root, ListNode* head){
+        if(!root)
+            return 0;
+        
+        if(dfs2(root, head)){
+            return true;
+        }
+        else{
+            return dfs(root->left, head) || dfs(root->right, head);
+        }
+    }
+    
+    bool isSubPath(ListNode* head, TreeNode* root) {
+        return dfs(root, head);
     }
 };
