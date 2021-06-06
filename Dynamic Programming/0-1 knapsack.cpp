@@ -5,6 +5,9 @@ https://www.interviewbit.com/problems/0-1-knapsack/
 
 // https://www.youtube.com/watch?v=ntCGbPMeqgg&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=5
 
+// recur() is using Memorization(recursion)
+// topDown() is topDown/bottomup Approach(itrative)
+
 int dp[1001][1001];
 
 int recur(vector<int> &A, vector<int> &B, int n, int wt){
