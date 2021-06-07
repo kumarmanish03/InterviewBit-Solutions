@@ -4,6 +4,8 @@
 https://leetcode.com/problems/target-sum/
 // https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=11
 
+// Please read comment line 26
+
 // Strategy:
 // watch youtube video for correct explanation
 // this question is same as 'count target sum' or 'count subset sum with given diff'
