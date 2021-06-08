@@ -116,3 +116,7 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
               return x > y
           });
 ```
+
+- In DP Top Down approach try to initialize first
+  before writing main iteration, and also start array (main array)
+  where (from i = 1) so that it does not give array out of bounds error
