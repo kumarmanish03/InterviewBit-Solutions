@@ -3,6 +3,8 @@
 
 // Question of matrix chain multiplication
 
+https://leetcode.com/problems/burst-balloons/
+
 class Solution {
 public:
     int dp[510][510];
