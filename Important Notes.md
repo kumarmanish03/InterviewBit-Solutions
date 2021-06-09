@@ -120,3 +120,6 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 - In DP Top Down approach try to initialize first
   before writing main iteration, and also start array (main array)
   where (from i = 1) so that it does not give array out of bounds error
+
+- Longest Incresing subsequence :
+  Firstly we will create another array of unique elements of original array and sort it. Now the longest increasing subsequence of our array must be present as a subsequence in our sorted array. That’s why our problem is now reduced to finding the common subsequence between the two arrays.
