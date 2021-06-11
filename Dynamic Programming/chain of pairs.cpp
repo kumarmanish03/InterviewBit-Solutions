@@ -4,6 +4,7 @@
 https://www.interviewbit.com/problems/chain-of-pairs/
 
 // Similar as Longest Increasing Subsequence (only minor change in if statement)
+// inc[i] denotes the length of longest subsequence end on index i
 
 int Solution::solve(vector<vector<int> > &A) {
     int n = A.size();
