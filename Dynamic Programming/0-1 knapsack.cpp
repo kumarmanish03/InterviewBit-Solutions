@@ -52,7 +52,6 @@ int Solution::solve(vector<int> &A, vector<int> &B, int C) {
     int n = A.size();
     memset(dp, -1, sizeof(dp));
     int ans = topDown(A, B, n, C);
-    memset(dp, -1, sizeof(dp));
     return ans;
 }
 
