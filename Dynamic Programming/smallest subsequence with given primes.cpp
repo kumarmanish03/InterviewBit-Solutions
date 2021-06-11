@@ -3,21 +3,21 @@
 
 https://www.interviewbit.com/problems/smallest-sequence-with-given-primes/
 
-// Easy using priority queue
+// Easy using sets
 
 vector<int> Solution::solve(int A, int B, int C, int D) {
     vector<int> res;
-    priority_queue<int, vector<int>, greater<int>> pq;
-    pq.push(A);
-    pq.push(B);
-    pq.push(C);
+    set<int> s;
+    s.insert(A);
+    s.insert(B);
+    s.insert(C);
     while(res.size() < D){
-        int temp = pq.top();
-        pq.pop();
+        int temp = *s.begin();
+        s.erase(s.begin());
         res.push_back(temp);
-        pq.push(temp*A);
-        pq.push(temp*B);
-        pq.push(temp*C);
+        s.insert(temp*A);
+        s.insert(temp*B);
+        s.insert(temp*C);
     }
     
     return res;
