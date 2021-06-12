@@ -6,11 +6,15 @@ https://www.youtube.com/watch?v=Osz-Vwer6rw&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY
 
 
  int sum(TreeNode* A, int& res){
+    // Base condn :-
     if(A == NULL)
         return 0;
+
+    // Hypothesis :-
     int l = sum(A->left, res);
     int r = sum(A->right, res);
     
+    // Induction :-
     // temp chooses maximum from this two, becoz it may happen that 
     //left/right produces negative, then its better to ignore left/right 
     //and just pass its value only as we can choose max sum from any node
