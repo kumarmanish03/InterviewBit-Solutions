@@ -1,4 +1,4 @@
-// Manish Kumar, IIIT Alahabad
+// Manish Kumar, IIIT Allahabad
 // Medium
 
 https://leetcode.com/contest/weekly-contest-245/problems/maximum-number-of-removable-characters/
