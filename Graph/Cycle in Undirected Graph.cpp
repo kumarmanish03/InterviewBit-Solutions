@@ -2,8 +2,10 @@
 // Medium
 
 https://www.interviewbit.com/problems/cycle-in-undirected-graph/
+// Disjoint Set
+//https://www.youtube.com/watch?v=eTaWFhPXPz4
 
-
+// Using DFS
 bool iscycleDFS(vector<vector<int> > &adj,vector<bool> &vis,int u,int parent)
 {
     vis[u] = true;
@@ -37,4 +39,32 @@ int Solution::solve(int V, vector<vector<int> > &B) {
          return true;
     }
     return false;
+}
+
+
+// =================
+// Using Union and Find
+
+// Note : Disjoint set union can only find cycle in undirected graph
+
+int find(int i, vector<int> &dsuf){
+    if(dsuf[i] == -1)
+        return i;
+    return find(dsuf[i], dsuf);
+}
+
+int Solution::solve(int A, vector<vector<int> > &B) {
+    vector<int> dsuf(A+1, -1);     // Disjoint set union find
+    for(auto i: B){
+        int fromP = find(i[0], dsuf);
+        int toP = find(i[1], dsuf);
+        
+        if(fromP == toP)
+            return 1;
+            
+        // Making Union
+        dsuf[fromP] = toP;
+    }
+    
+    return 0;
 }
