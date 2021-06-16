@@ -2,6 +2,7 @@
 // Medium
 
 https://www.interviewbit.com/problems/two-teams/
+https://www.youtube.com/watch?v=MDTq58KLIx0
 
 // Standard 2 color problem or Bipartite problem
 
