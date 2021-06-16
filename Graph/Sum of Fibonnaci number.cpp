@@ -6,6 +6,8 @@ https://www.interviewbit.com/problems/sum-of-fibonacci-numbers/
 // Strategy : 
 // Chosse just min fibonacci no
 
+// This ques is similar to coin change but for large cases it give MLE / TLE, Hence use greedy
+
 int Solution::fibsum(int A) {
     if(A < 2) return A;
     vector<int> fibo = {1, 1};
