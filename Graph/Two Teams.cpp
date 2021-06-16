@@ -9,8 +9,11 @@ bool dfs(int u, int c, int par, vector<vector<int> > &adj, vector<int> &team, ve
     vis[u] = true;
     team[u] = c;
     for(auto v:adj[u]){
+      // Becoz of undirected graph
         if(v == par)
             continue;
+
+        // team[u]^3 = 2 if team[u]=1 and vice versa
         if(team[v] == 0){
             if(!dfs(v, team[u]^3, u, adj, team, vis))
                 return false;
@@ -29,9 +32,9 @@ int Solution::solve(int A, vector<vector<int> > &B) {
         adj[i[0]].push_back(i[1]);
         adj[i[1]].push_back(i[0]);
     }
-    // team 0 : noteam
-    // team 1 : 1st team
-    // team 2 : 2nd team
+    // team[u]=0 : noteam
+    // team[u]=1 : 1st team
+    // team[u]=2 : 2nd team
     vector<int> team(A+1, 0);
     vector<bool> vis(A+1, 0);
     for(int i = 1; i <= A; i++){
