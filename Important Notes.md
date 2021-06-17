@@ -123,3 +123,5 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 
 - Longest Incresing subsequence :
   Firstly we will create another array of unique elements of original array and sort it. Now the longest increasing subsequence of our array must be present as a subsequence in our sorted array. That’s why our problem is now reduced to finding the common subsequence between the two arrays.
+
+- DFS is used in finding shortest path in Trees while in Graph BFS is used to find shortest path becoz we have unique paths from two nodes in trees while in graph we can have exponential no. of unique paths b/w two nodes
