@@ -126,3 +126,8 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 
 - DFS is used in finding shortest path in Trees while in Graph BFS is used to find shortest path becoz we have unique paths from two nodes in trees while in graph we can have exponential no. of unique paths b/w two nodes
   DFS will run in exponential time while BFS will run in polynomial time. That's why we will use BFS in Graph for finding shortest path
+
+- For checking an element in map, dont check like this 'm[tocheck] == 0'
+  instead use 'm.count(tocheck) == 0' becoz later will create another map element while checking which will increase MLE
+
+- Also if sorting is not necessary, then you should use 'unordered_map/unordered_set' unless it may give MLE/TLE
