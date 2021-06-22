@@ -133,3 +133,6 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 - Also if sorting is not necessary, then you should use 'unordered_map/unordered_set' unless it may give MLE/TLE
 
 - Do Dry run your code (very carefully) to find errors. Then its easy to debug and reach to Accepted Soln
+
+- Floor(n) is just smallest or equal to 'n'
+- Ceil(n) is largest or equal to 'n'
