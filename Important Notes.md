@@ -134,5 +134,4 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 
 - Do Dry run your code (very carefully) to find errors. Then its easy to debug and reach to Accepted Soln
 
-- Floor(n) is just smallest or equal to 'n'
-- Ceil(n) is largest or equal to 'n'
+- Floor(n) is just smallest or equal to 'n'.Ceil(n) is just largest or equal to 'n'. lowerbound(n) is no. whose value is atleast 'n'. upperbound(n) is no whose value is just greater than 'n'.
