@@ -135,3 +135,5 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 - Do Dry run your code (very carefully) to find errors. Then its easy to debug and reach to Accepted Soln
 
 - Floor(n) is just smallest or equal to 'n'.Ceil(n) is just largest or equal to 'n'. lowerbound(n) is no. whose value is atleast 'n'. upperbound(n) is no whose value is just greater than 'n'.
+
+- Every character array in C/C++ ends with a '\0' (NULL) character. It marks the end of the string. If it is not added in the end, then the code may produce garbage characters after the string.
