@@ -1,3 +1,28 @@
+- Binary Exponentiation (used to calculate power and modular inverse)
+  `https://cp-algorithms.com/algebra/binary-exp.html`
+
+  a^b % m (m is a prime no.)
+
+  ````long long int binExp(long long int a, long long int b, long long m){
+        a %= m;
+        long long res = 1;
+        while(b > 0){
+            if(b & 1)
+                res = res * a % m;
+            a = a * a % m;
+            b >>= 1;
+        }
+
+        return res;
+    }```
+
+  ````
+
+  For Modular : a / b = a \* b^-1 (b^-1 is calculated using Fermet theorem)
+  **_Fermets Theorem_** : a^m-1 = 1 and a^m-2 = a^-1
+  Hence b^-1 = binExp(b, m-2, m);
+  a / b = a \* binExp(b, m-2, m);
+
 - transform(Iterator inputBegin, Iterator inputEnd, Iterator OutputBegin, unary_operation)
   > used to convert letters to upeercase or lowercase, add something to all elements of array, or some operation which should operate on all values of array
 - Two Pointers
