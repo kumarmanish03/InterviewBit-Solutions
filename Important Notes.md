@@ -3,7 +3,8 @@
 
   a^b % m (m is a prime no.)
 
-  ````long long int binExp(long long int a, long long int b, long long m){
+  ```
+  long long int binExp(long long int a, long long int b, long long m){
         a %= m;
         long long res = 1;
         while(b > 0){
@@ -14,9 +15,9 @@
         }
 
         return res;
-    }```
+    }
 
-  ````
+  ```
 
   For Modular : a / b = a \* b^-1 (b^-1 is calculated using Fermet theorem)
   **_Fermets Theorem_** : a^m-1 = 1 and a^m-2 = a^-1
