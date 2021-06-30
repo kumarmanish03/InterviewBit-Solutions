@@ -167,3 +167,31 @@ In this, Insertion and removal take O(logn) time, and retrieval takes O(1) time.
 - Every character array in C/C++ ends with a '\0' (NULL) character. It marks the end of the string. If it is not added in the end, then the code may produce garbage characters after the string.
 
 - cpp_int is a Big integer data type to hold very very large values
+
+- See working of two func, s.find() & s.substr(1)
+
+```
+// CPP program to illustrate substr()
+#include <string.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Take any string
+    string s = "dog:cat";
+
+    // Find position of ':' using find()
+    int pos = s.find(":");
+
+    // Copy substring after pos
+    string sub = s.substr(pos + 1);
+
+    // prints the result
+    cout << "String is: " << sub;
+
+    return 0;
+}
+
+OUTPUT : String is cat
+```
