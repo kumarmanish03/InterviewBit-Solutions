@@ -6,7 +6,7 @@ https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/
 // Strategy:
 // If you notice carefully in the flattened tree, each node’s right child points to the next node of a pre-order traversal.
 // Now, if a node does not have left node, then our problem reduces to solving it for the node->right.
-// If it does, then the next element in the preorder traversal is the immediate left child. But if we make the immediate left child as the right child of the node, then the right subtree will be lost. So we figure out where the right subtree should go. In the preorder traversal, the right subtree comes right after the rightmost element in the left subtree.
+// If it does, then the next element in the preorder traversal is the immediate left child. But if we make the immediate left child as the right child of the node, then the right subtree will be lost.
 // So we figure out the rightmost element in the left subtree, and attach the right subtree as its right child. We make the left child as the right child now and move on to the next node.
 
 void flat(TreeNode* A){
