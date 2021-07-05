@@ -13,10 +13,8 @@ int Solution::solve(vector<int> &A, int B) {
         sum += A[j];
         
         while(sum >= B){
-            //if(j > i){
                 sum -= A[i];
                 i++;
-            //}
         }
         
         count += j - i + 1;
