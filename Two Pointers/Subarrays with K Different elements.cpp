@@ -6,9 +6,9 @@
 https://leetcode.com/problems/subarrays-with-k-different-integers/submissions/
 https://www.interviewbit.com/problems/subarrays-with-distinct-integers/
 
-This question is simple if we have to calculate subaarays with atmost k Distinct elements
-Hence we make a function of it and subtract to get answer for exactly k Distinct elements
-Ex : return atMostKDistict(nums, k) - atMostKDistict(nums, k-1);
+// This question is simple if we have to calculate subaarays with atmost k Distinct elements
+// Hence we make a function of it and subtract to get answer for exactly k Distinct elements
+// Ex : return atMostKDistict(nums, k) - atMostKDistict(nums, k-1);
 
 class Solution {
 public:
