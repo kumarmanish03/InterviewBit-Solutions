@@ -3,6 +3,7 @@
 // Time Complexity : O(m + n)
 // Space Complexity : O(1)
 
+// Resize A first, then start from back
 
 https://www.interviewbit.com/problems/merge-two-sorted-lists-ii/
 
