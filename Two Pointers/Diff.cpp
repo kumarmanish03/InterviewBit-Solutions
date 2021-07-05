@@ -12,6 +12,31 @@ https://www.interviewbit.com/problems/diffk/
 // difference increases and then handle the cases.
 // Follow this in all Two Pointers Questions
 
+// Soln 1
+
+int Solution::diffPossible(vector<int> &A, int B) {
+    int ans = 0;
+    if(A.size() == 1) return ans;
+    int i = 0;
+    int j = 1;
+    while(i < A.size() && j < A.size()){
+        if(A[j] - A[i] == B && i != j){
+            return 1;
+        }
+        else if(A[j] - A[i] > B){
+            i++;
+        }
+        else {
+            j++;
+        }
+    }
+
+    return 0;
+}
+
+
+// Soln 2
+
 int Solution::diffPossible(vector<int> &A, int B) {
     int ans = 0;
     if(A.size() == 1) return ans;
