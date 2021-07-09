@@ -44,7 +44,7 @@ int main(){
     vector<int> occurances;
     bool found = false;
     for(int i = 0; i + S - 1 < T; i++){
-      long long curr = (tHash[i+S] - tHash[i]) % m;
+      long long curr = (tHash[i+S] + m - tHash[i]) % m;
       if(curr == sHash * p_pow[i]){
         occurances.push_back(i+1);
         found = true;
