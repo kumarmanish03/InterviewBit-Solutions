@@ -7,16 +7,6 @@ unordered_map<int, pair<int, int>> ancestor;
  int n1;
  int n2;
 
-void findLevel(TreeNode *A, unordered_map<int, int> &level, int l){
-    if(!A)
-        return;
-    
-    level.insert({A->val,l});
-
-    findLevel(A->left, level, l+1);
-    findLevel(A->right, level, l+1);
-}
-
 void findA(TreeNode *A, int parent){
     if(!A)
         return;
@@ -35,24 +25,25 @@ void findA(TreeNode *A, int parent){
     findA(A->right, parent);
 }
 
-void traverse(TreeNode *A){
+void traverse(TreeNode *A, unordered_map<int, int> &level, int l){
     if(!A)
         return;
 
+    level.insert({A->val,l});
     ancestor[A->val].first = ancestor[A->val].second = -1;
     findA(A, A->val);
 
-    traverse(A->left);
-    traverse(A->right);
+    traverse(A->left, level, l+1);
+    traverse(A->right, level, l+1);
 }
 
 int Solution::lca(TreeNode* A, int B, int C) {
     unordered_map<int, int> level;
-    findLevel(A, level, 0);
     ancestor.clear(); 
     n1 = B;
     n2 = C;
-    traverse(A);
+
+    traverse(A, level, 0);
 
     int ans = -1;
     int depAns = INT_MIN;
