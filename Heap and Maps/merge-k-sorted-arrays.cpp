@@ -6,6 +6,10 @@
 https://www.interviewbit.com/problems/merge-k-sorted-arrays/
 
 // Since all arrays are already sorted, hence we use them to minimize complexity
+// We maintain heap of size k to sort all elements
+// First insert first elements of all arrays TC : logk
+// Then pop min from heap and push it to result also push next element of that array(if possible) to heap [see line 36]
+// Since we maintain heap of size k and traverse it for n*k elements. Hence TC : n*k*logk
 
 // This soln also same if sizes of arrays are different
 
