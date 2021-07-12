@@ -50,7 +50,7 @@ int minCost(int maxTime, vector<vector<int>>& edges, vector<int>& fees) {
             int nextTime = v.second;
             int nextCity = v.first;
 
-            // Ignore node which is already evaluead at it was with less time
+            // Ignore node which is already evaluated at it was with less time
             if(i > 0 && adj[u][i-1].first == adj[u][i].first)
                 continue;
 
