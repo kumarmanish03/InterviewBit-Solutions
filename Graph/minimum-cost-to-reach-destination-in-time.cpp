@@ -3,6 +3,11 @@
 
 // Dijikstra modified
 
+// This question is similar to standard Dijikstra but here we have to calculate minimum cost (which is assigned to nodes)
+// Hence we declare two vectors one for cost[node] and time[node] and apply dijikstra on it
+// We choose nextNode if (currCost + nextCityCost <= cost[nextCityNode]) and if not then (currtime + edgeTime <= time[nextNode])
+// Also, for multiple edges b/w nodes we choose edge with minimum time
+
 https://leetcode.com/contest/biweekly-contest-56/problems/minimum-cost-to-reach-destination-in-time/
 
 class Solution {
@@ -19,6 +24,7 @@ int minCost(int maxTime, vector<vector<int>>& edges, vector<int>& fees) {
         adj[e[1]].push_back({e[0], e[2]});
     }
 
+    // sorting so that for similar nodes minimum time nodes comes first 
     for(int i = 0; i < n; i++){
         sort(adj[i].begin(), adj[i].end());
     }
@@ -44,6 +50,7 @@ int minCost(int maxTime, vector<vector<int>>& edges, vector<int>& fees) {
             int nextTime = v.second;
             int nextCity = v.first;
 
+            // Ignore node which is already evaluead at it was with less time
             if(i > 0 && adj[u][i-1].first == adj[u][i].first)
                 continue;
 
