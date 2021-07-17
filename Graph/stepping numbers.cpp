@@ -4,7 +4,7 @@
 https://www.interviewbit.com/old/problems/stepping-numbers/
 
 /*
-Startegy:
+Strategy:
 
 Assume that we have a graph where the starting node is 0 and we need to traverse it from the start node to all the reachable nodes.
 With the restrictions given in the graph about the stepping numbers, what do you think should be the restrictions defining the next transitions in the graph.
