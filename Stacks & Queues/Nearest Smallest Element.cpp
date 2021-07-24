@@ -3,6 +3,8 @@
 // Time Complexity : O(n)
 // Space Complexity : O(n)
 
+// See 2 Approach
+
 https://www.interviewbit.com/problems/nearest-smaller-element/
 https://www.youtube.com/watch?v=T-E3hWEPWWU&t=465s
 
@@ -10,6 +12,32 @@ https://www.youtube.com/watch?v=T-E3hWEPWWU&t=465s
 // Since this ques asked for nearest smaller to left, hence we started from back of array(see loop)
 // In above yt video next greater element asked from right
 // Try to done this question self and understand all those cases
+
+// ====================================
+// Approach 1
+
+vector<int> Solution::prevSmaller(vector<int> &A) {
+    stack<int> s;
+    int n = A.size();
+
+    vector<int> v(n, -1);
+    for(int i = 0; i < A.size(); i++){
+        // Deleting all previous elements which are greater than current
+        while(!s.empty() && A[s.top()] >= A[i])
+            s.pop();
+        
+        if(!s.empty())
+            v[i] = A[s.top()];
+        
+        s.push(i);
+    }
+
+    return v;
+}
+
+
+// ========================================
+// Approach 2
 
 vector<int> Solution::prevSmaller(vector<int> &A) {
     stack<int> s;
