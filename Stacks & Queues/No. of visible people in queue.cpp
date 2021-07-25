@@ -20,7 +20,7 @@ public:
                 st.pop();
             }
             // If stack is empty that no element is gretaer than current so add 0
-            // And if stack is empty so add 1 for element which is greater than current
+            // And if stack is not empty so add 1 for element which is greater than current
             res[i] = cnt + (st.empty() ? 0 : 1);
             st.push(h[i]);
         }
