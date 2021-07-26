@@ -7,6 +7,8 @@ https://www.interviewbit.com/problems/sliding-window-maximum/
 
 // Soln 1
 // Deque s.t. it always stores Maximum in front
+// cpalgorithms.com [min stack, min queue topic]
+
 deque<int> dq;
 
 int getMax(){
