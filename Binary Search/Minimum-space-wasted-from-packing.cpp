@@ -29,11 +29,12 @@ public:
     int minWastedSpace(vector<int>& pack, vector<vector<int>>& boxes) {
         
         long long ans = LLONG_MAX;
+
         sort(pack.begin(), pack.end());
-        vector<long long> presum(pack.size());
-        presum[0] = (long long)pack[0];
         
         //presum of packages
+        vector<long long> presum(pack.size());
+        presum[0] = (long long)pack[0];
         for(int i = 1; i < pack.size(); i++){
             presum[i] = (long long)pack[i] + presum[i-1];
         }
@@ -43,6 +44,7 @@ public:
             
             long long space = 0;
             int totalPicked = 0;
+            
             for(auto b : box){
                 // total package hold by box b
                 int cnt = countBox(pack, b);
