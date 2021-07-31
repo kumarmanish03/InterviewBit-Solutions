@@ -64,8 +64,6 @@ int main(){
     v[4].push_back(8), v[8].push_back(4);
     v[4].push_back(9), v[9].push_back(4);
 
-    int a[] = { 3, 2, 1, 10, 1, 3, 9, 1, 5, 3, 4, 5, 9, 8 };
-
     int res = INT_MIN;
     memset(dp, -1, sizeof(dp));
     dfs(1, v, vis2, res);
