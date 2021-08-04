@@ -208,3 +208,41 @@ OUTPUT : String is cat
 | Heap Sort      | Ω(n log(n)) | Θ(n log(n)) | O(n log(n)) |
 | Radix Sort     | Ω(nk)       | Θ(nk)       | O(nk)       |
 | Bucket Sort    | Ω(n+k)      | Θ(n+k)      | O(n^2)      |
+
+- C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, better performance and finally a robust software development.
+
+- Python is a High Level Lang becoz it has its own memory management
+- C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.
+- Type 'g++ hello.cpp' and press enter to compile your code. If there are no errors in your code the command prompt will take you to the next line and would generate a.out executable file. Now, type 'a.out' to run your program. You will be able to see ' Hello World ' printed on the window
+
+```cpp
+$ g++ hello.cpp
+$ ./a.out
+Hello World
+```
+
+- Constants refer to fixed values that the program may not alter and they are called literals
+
+- The data type modifiers are listed here −
+  signed
+  unsigned
+  long
+  short
+
+- A storage class defines the scope (visibility) and life-time of variables and/or functions within a C++ Program. These specifiers precede the type that they modify. There are following storage classes, which can be used in a C++ Program
+
+auto
+register
+static
+extern
+mutable
+
+- The register storage class is used to define local variables that should be stored in a register instead of RAM. This means that the variable has a maximum size equal to the register size (usually one word) and can't have the unary '&' operator applied to it (as it does not have a memory location).
+
+{
+register int miles;
+}
+
+The register should only be used for variables that require quick access such as counters. It should also be noted that defining 'register' does not mean that the variable will be stored in a register. It means that it MIGHT be stored in a register depending on hardware and implementation restrictions.
+
+- A reference must be initialized when it is created. Pointers can be initialized at any time.
