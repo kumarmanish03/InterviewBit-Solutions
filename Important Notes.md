@@ -246,3 +246,33 @@ register int miles;
 The register should only be used for variables that require quick access such as counters. It should also be noted that defining 'register' does not mean that the variable will be stored in a register. It means that it MIGHT be stored in a register depending on hardware and implementation restrictions.
 
 - A reference must be initialized when it is created. Pointers can be initialized at any time.
+
+- Spanning tree : Graph in which all vertices are connected having V-1 edges
+
+- Minimum Spanning tree (MST) : path having min cost and all vertices connected with v-1 egdes
+
+- Prims Algo : Used to find MST
+
+  > TC : O(VlogV), for adj list
+  > TC : O(V^2), for adj matrix
+  > can also give path of MST
+
+- Kruskal Algo : Used to find MST(using Disjoint set union)
+
+  > TC : O(ElogE + EV), ElogE for sorting edges and EV for disjoint operation
+  > can also give path of MST
+
+- Dijsktra Algo : Minimum cost b/w two nodes
+
+  > TC : O(ElogV), for adj list
+  > TC : O(V^2), for adj matrix
+  > Not for Undirected Graphs having -ve edge(Becoz of -ve edge weight cycle)
+  > Not for graphs having -ve edge weight cycle
+  > Cannot detect -ve edge weight cycle while Bellman-ford Algo can find
+
+- Bellmon Ford : Minimum cost b/w two nodes
+  > TC : O(EV)
+  > Not for Undirected Graphs having -ve edge(Becoz of -ve edge weight cycle)
+  > Can detect -ve edge weight cycle
+  > relax all edges up to V-1 times
+  > If at Vth time if it is finding again new shortest path then their is a -ve edge weight cycle
