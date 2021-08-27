@@ -2,7 +2,7 @@
 // Medum
 
 // Prims Algorithm
-// TC : O()
+// TC : O(VlogV)
 
 https://www.interviewbit.com/old/problems/commutable-islands/
 
