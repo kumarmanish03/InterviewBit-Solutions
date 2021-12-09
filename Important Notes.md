@@ -271,8 +271,14 @@ The register should only be used for variables that require quick access such as
   > Cannot detect -ve edge weight cycle while Bellman-ford Algo can find
 
 - Bellmon Ford : Minimum cost b/w two nodes
+
   > TC : O(EV)
   > Not for Undirected Graphs having -ve edge(Becoz of -ve edge weight cycle)
   > Can detect -ve edge weight cycle
   > relax all edges up to V-1 times
   > If at Vth time if it is finding again new shortest path then their is a -ve edge weight cycle
+
+- Min Heap : all the child nodes will be less than or equal to that node
+  > priority_queue<int> pq;
+- Max Heap : All the child nodes will be more than or equal to that node
+  > priority_queue<int, vector<int>, greater<int>> pq;
