@@ -3,7 +3,43 @@
 
 https://www.interviewbit.com/problems/generate-all-parentheses-ii/
 
+// soln
 
+class Solution {
+public:
+    
+    void fun(int op, int cl, vector<string> &ans, string temp, int n){
+        if(op == cl && n == op){
+            ans.push_back(temp);
+            return;
+        }
+        if(op > n){
+            return;
+        }
+        
+        if(op == cl){
+            temp.push_back('(');
+            fun(op+1, cl, ans, temp, n);
+            temp.pop_back();
+        }else if(op > cl){
+            temp.push_back('(');
+            fun(op+1, cl, ans, temp, n);
+            temp.pop_back();
+            temp.push_back(')');
+            fun(op, cl+1, ans, temp, n);
+            temp.pop_back();
+        }
+    }
+    
+    vector<string> generateParenthesis(int n) {
+        vector<string> ans;
+        string temp;
+        fun(0, 0, ans, temp, n);
+        return ans;
+    }
+};
+
+// Another soln
 // For checking parenthesis
 bool isCorrect(string A) {
     stack<char> s;
