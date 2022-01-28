@@ -1,4 +1,5 @@
 // Manish Kumar, IIIT Allahabad
+// DP, Observation
 
 // If you clearly observe this problem reduce to-
 // "Find max sum such that no two consecutive added" OR Stlicker thieve problem GFG
