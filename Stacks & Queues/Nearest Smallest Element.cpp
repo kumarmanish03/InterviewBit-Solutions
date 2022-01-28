@@ -3,7 +3,27 @@
 // Time Complexity : O(n)
 // Space Complexity : O(n)
 
-// See 2 Approach
+// ====================================
+
+https://leetcode.com/problems/daily-temperatures/
+
+class Solution {
+public:
+    vector<int> dailyTemperatures(vector<int>& temp) {
+        vector<int> v(temp.size());
+        stack<int> st;
+        for(int i = 0; i < temp.size(); i++){
+            while(!st.empty() && temp[i] > temp[st.top()]){
+                v[st.top()] = i - st.top();
+                st.pop();
+            }
+            st.push(i);
+        }
+        return v;
+    }
+};
+
+// ====================================
 
 https://www.interviewbit.com/problems/nearest-smaller-element/
 https://www.youtube.com/watch?v=T-E3hWEPWWU&t=465s
@@ -13,8 +33,8 @@ https://www.youtube.com/watch?v=T-E3hWEPWWU&t=465s
 // In above yt video next greater element asked from right
 // Try to done this question self and understand all those cases
 
-// ====================================
-// Approach 1
+
+// Approach 2
 
 vector<int> Solution::prevSmaller(vector<int> &A) {
     stack<int> s;
@@ -37,7 +57,7 @@ vector<int> Solution::prevSmaller(vector<int> &A) {
 
 
 // ========================================
-// Approach 2
+// Approach 3
 
 vector<int> Solution::prevSmaller(vector<int> &A) {
     stack<int> s;
