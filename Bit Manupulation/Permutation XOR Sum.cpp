@@ -2,6 +2,8 @@
 // Medium, Observation
 // TC: log2(n)
 
+https://www.codechef.com/problems/PERMXORSUM
+
 // For a no. if we reverse its bits and then do xor to that no, then xor will max
 // Ex. 10(1010) its rever(10) = 5(0101). Then 10^5 = 15(1111)
 // And no. b/w 10 to 5 all can have 15 xors. Then for next rever(4) = 3 all no. b/w 4 to 3 have 4^3(111) and so on.
