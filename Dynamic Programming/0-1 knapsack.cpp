@@ -3,7 +3,31 @@
 
 https://www.interviewbit.com/problems/0-1-knapsack/
 
-// https://www.youtube.com/watch?v=ntCGbPMeqgg&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=5
+// SPACE OPTIMIZED SOLUTION of Knapsack Problem
+
+// Refer Video : https://www.youtube.com/watch?v=7C_FIc7PytA
+
+// space optimized soln of dp soln having need only of onlu previous row in recurrence relation
+
+// Just change dp[i][j] to dp[i%2][j], dp[i-1][j] to dp[(i+1)%2][j], dp[n][C] to dp[n%2][C]
+int Solution::solve(vector<int> &A, vector<int> &B, int C) {
+    int n = A.size();
+    int dp[2][C+1];
+    memset(dp, 0, sizeof(dp));
+
+    for(int i = 1; i < n+1; i++){
+        for(int j = 1; j < C+1; j++){
+            if(B[i-1] <= j){
+                dp[i%2][j] = max(dp[(i+1)%2][j], A[i-1] + dp[(i+1)%2][j - B[i-1]]);
+            }
+            else{
+                dp[i%2][j] = dp[(i+1)%2][j];
+            }
+        }
+    }
+
+    return dp[n%2][C];
+}
 
 // recur() is using Memorization(recursion)
 
