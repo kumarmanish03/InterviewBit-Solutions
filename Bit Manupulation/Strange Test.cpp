@@ -26,7 +26,7 @@ int solve(){
 	int msb = getMSB(b);
 	int mx = (1 << msb) * 2 - 1;
 	int ans = INT_MAX;
-	for(int x = a; x <= mx; x++){
+	for(int x = a; x < b; x++){
 		vector<int> v(msb+1, 0);
 		int y = x;
 		for(int i = 0; i <= msb; i++){
