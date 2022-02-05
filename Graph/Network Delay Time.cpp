@@ -1,5 +1,5 @@
 // Manish Kumar, IIIT Allahabad
-// Medium, Dijkstta problem
+// Medium, Dijkstra problem
 
 class Solution {
 public:
