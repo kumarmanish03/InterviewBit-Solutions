@@ -1,6 +1,7 @@
 // Manish Kumar, IIIT Allahabad
 
 https://cses.fi/problemset/task/2182/
+https://usaco.guide/problems/cses-2182-divisor-analysis/solution
  
 #include<bits/stdc++.h>
 using namespace std;
