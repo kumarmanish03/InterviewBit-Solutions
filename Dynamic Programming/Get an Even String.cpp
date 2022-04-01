@@ -1,5 +1,7 @@
 // Manish Kumar, IIIT Allahabad
 
+https://codeforces.com/contest/1660/problem/C
+
 // DP + String
 
 #include<bits/stdc++.h>
