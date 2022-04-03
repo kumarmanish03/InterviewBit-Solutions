@@ -1,5 +1,7 @@
 // Manish Kumar, IIIT Allahabad
 
+https://leetcode.com/problems/prefix-and-suffix-search/
+
 // Trie
 
 class WordFilter {
